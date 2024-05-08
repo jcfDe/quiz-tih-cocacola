@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is happening</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" media="all" />
+    <script type="text/javascript" src="/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="/assets/js/gsap+scrollTrigger.js"></script>
+</head>
+
+<body>
+    <div class="app">
+
+        <!--BACKGROUND COMUN-->
+        <div class="bg-texture">
+            <picture>
+                <source srcset="/assets/img/texture-bg-mobile.webp" type="image/webp" media="(max-width: 768px)">
+                <source srcset="/assets/img/texture-bg-mobile.png" type="image/png" media="(max-width: 768px)">
+                <source srcset="/assets/img/texture-bg-desktop.webp" type="image/webp">
+                <source srcset="/assets/img/texture-bg-desktop.png" type="image/png">
+                <img src="/assets/img/texture-bg-desktop.png" alt="texture background">
+            </picture>
+        </div>
+        <div class="bg-hands">
+            <div class="bg-hands-mobile">
+                <img src="/assets/img/hands-bg.png" alt="hands background"></img>
+            </div>
+            <div class="bg-hands-desktop">
+                <img src="/assets/img/hands-bg-desktop-full.png" alt="hands background"></img>
+            </div>
+
+        </div>
+        <div class="bg-ellipse">
+            <div class="ellipse"></div>
+        </div>
+        <div class="page page-base">
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/img/tccc-logo.svg" alt="The Cocacola Logo"></img>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGES -->
+        <!-- PAGE INTRO -->
+        <div class="page page-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <h1 class="title">THIS<br />IS<br />HAPPEN<br />ING</h1>
+                    <p class="text-middle">Mehrweg-Flaschen, Einweg-Flaschen, PET, Recycling – Diese Begriffe begegnen uns tagtäglich in unserem Alltag. Doch was bedeuten sie eigentlich? Teste dein Wissen und gewinne mit etwas Glück ## (Platzhalter Preis).
+                    </p>
+                    <button class="button button-start">Start</button>
+                    <a href="javascript:void(0)" class="link-modal">Bedingungen anzeigen</a>
+                </div>
+                <div class="hand-finger">
+                    <img src="/assets/img/hand-finger.png" alt="hand finger"></img>
+                </div>
+                <div class="hand-bottle">
+                    <img src="/assets/img/hand-bottle.png" alt="hand bottle"></img>
+                </div>
+                <div class="hand-finger-mobile">
+                    <img src="/assets/img/hand-finger-responsive.png" alt="hand finger"></img>
+                </div>
+            </div>
+        </div>
+        <!--PAGE INTRO 2-->
+        <div class="page page-intro2">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-image">
+                        <img src="/assets/img/headphones.png" alt="Headphones">
+                    </div>
+                    <div class="intro-copy">
+                        <p class="text-middle fs--14 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                        <button class="button button-next">Nächste</button>
+                    </div>
+                </div>
+                <div class="hand-finger">
+                    <img src="/assets/img/hand-finger.png" alt="hand finger"></img>
+                </div>
+            </div>
+        </div>
+
+        <!--Page Quiz-->
+        <div class="page page-quiz">
+            <div class="container">
+                <div class="progress-bar-container">
+                    <div class="progress-bar-info">
+                        <p class="text-black fs--14">Frage</p>
+                        <p class="text-black fs--14 progress-text">1/3</p>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress"></span>
+                    </div>
+                </div>
+                <div class="quiz-container">
+                    <div class="question">
+                        <p class="question-text text-white fs--18">Was hat der grüne Pfeil auf dem Etikett der PET Einweg-Flaschen zu bedeuten?</p>
+                    </div>
+                    <div class="answers">
+                        <div class="answer" data="answer-a">
+                            <span class="answer-option">A</span>
+                            <p class="answer-text text-black fs--14">Die PET-Flasche kann im Bio Müll entsorgt werden</p>
+                            <a href="javascript:void(0)" class="answer-info-icon" data='answer-a'></a>
+                            <div class="answer-result"></div>
+                        </div>
+                        <div class="answer" data="answer-b">
+                            <span class="answer-option">B</span>
+                            <p class="answer-text text-black fs--14">Die Flasche besteht aus nachwachsenden Rohstoffen</p>
+                            <a href="javascript:void(0)" class="answer-info-icon" data='answer-b'></a>
+                            <div class="answer-result"></div>
+                        </div>
+                        <div class="answer" data="answer-c">
+                            <span class="answer-option">C</span>
+                            <p class="answer-text text-black fs--14">Der Flaschenkörper wurde aus recyceltem PET hergestellt</p>
+                            <a href="javascript:void(0)" class="answer-info-icon" data='answer-b'></a>
+                            <div class="answer-result answer-result-fail"></div>
+                        </div>
+                    </div>
+                    <button class="button button-next">Nächste</button>
+                </div>
+                <div class="hand-bottle">
+                    <img src="/assets/img/hand-bg-short.png" alt="hand with bottle"></img>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE Hurra-->
+
+        <div class="page page-hurra">
+            <div class="container">
+            </div>
+            <div class="text-content">
+                <p class="title">Hurra!</p>
+                <p class="subtitle">Das ist richtig!</p>
+            </div>
+            <div class="hand-finger">
+                <picture>
+                    <source srcset="/assets/img/image-hurra-mob.png" type="image/png" media="(max-width: 768px)">
+                    <source srcset="/assets/img/image-hurra-dsk.png" type="image/png">
+                    <img src="/assets/img/image-hurra-dsk.png" alt="hand hurra">
+                </picture>
+            </div>
+        </div>
+
+        <!-- PAGE Hurra-->
+
+        <div class="page page-fail">
+            <div class="container">
+            </div>
+            <div class="text-content">
+                <p class="title">Das ist</br>leider falsch</p>
+                <p class="subtitle">Probier’s nochmal</p>
+            </div>
+            <div class="hand-finger">
+                <picture>
+                    <source srcset="/assets/img/image-fail-mob.png" type="image/png" media="(max-width: 480px)">
+                    <source srcset="/assets/img/image-fail-dsk.png" type="image/png">
+                    <img src="/assets/img/image-fail-dsk.png" alt="hand fail">
+                </picture>
+            </div>
+        </div>
+
+        <!-- PAGE Result-->
+
+        <div class="page page-result">
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/img/tccc-logo.svg" alt="The Cocacola Logo"></img>
+                </div>
+                <div class="image-container">
+                    <img src="/assets/img/result-image.png"></img>
+                </div>
+                <div class="text-content">
+                    <h2 class="title">GUT GESPIELT!</h2>
+                    <p class="subtitle">Erfolgreiche Fragen</p>
+                    <div class="result">
+                        <p class="number number-success">0</p>
+                        <p class="number-join">von</p>
+                        <p class="number number-qtyTotal">0</p>
+                    </div>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    <button class="button button-next">Lorem ipsum</button>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL -->
+        <div class="modal">
+            <div class="modal-inner">
+                <div class="modal-inner-close">
+                    <a href="javascript:void(0)" class="modal-close">
+                        <img src="./assets/img/close_modal.svg" alt="icon-close"></img>
+                    </a>
+                </div>
+                <div class="modal-inner-text">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+
+</html>

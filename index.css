@@ -1,0 +1,58 @@
+/*
+Error: Invalid CSS after "": expected selector, was "<!DOCTYPE html>"
+        on line 1 of /home/ubuntu/environment/dev2/index.html
+
+1: <!DOCTYPE html>
+2: <html lang="de">
+3: 
+4: <head>
+5:     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+6:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Backtrace:
+/home/ubuntu/environment/dev2/index.html:1
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/scss/parser.rb:1218:in `expr!'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/gems/sass-3.7.4/bin/scss:13:in `<top (required)>'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/bin/scss:25:in `load'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/bin/scss:25:in `<main>'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/bin/ruby_executable_hooks:22:in `eval'
+/home/ubuntu/.rvm/gems/ruby-3.2.2/bin/ruby_executable_hooks:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"\": expected selector, was \"<!DOCTYPE html>\"\A         on line 1 of /home/ubuntu/environment/dev2/index.html\A \A 1: <!DOCTYPE html>\A 2: <html lang=\"de\">\A 3: \A 4: <head>\A 5:     <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\A 6:     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"; }
